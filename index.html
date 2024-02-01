@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Litio | Discord Bot</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+    <!-- navbar -->
+    <header>
+        <h1 class="logo">Litio</h1>
+        <nav>
+            <ul class="nav-area top-nav">
+                <li><a href="#top">Home</a></li>
+                <li><a href="#features">Características</a></li>
+                <li><a href="#commands">Todos los comandos</a></li>
+                <!-- <li><a href="#faq">FAQ</a></li> -->
+                <li><a href="#support">Servidor de Ayuda</a></li>
+            </ul>
+        </nav>
+        <a href="https://discord.com/api/oauth2/authorize?client_id=1146522183439487096&permissions=8&scope=applications.commands%20bot" class="btn-area">Invitación</a>
+    </header>
+    <!-- navbar end -->
+    <!-- home -->
+    <div class="wrapper">
+        <div class="home" id="home">
+            <div class="home-text">
+                <h1 id="botname">Litio</h1>
+                <!-- <h3 style="margin-left: 0;">why should they invite your bot?</h3> -->
+                <p class="bot-description">Bot de moderación/diversión ágil y fácil de configurar con simples sistemas de anti links y moderación, además de una pizca de IA. ¡Mantén tu servidor seguro y controlado :)!</p>
+                <a href="https://discord.com/api/oauth2/authorize?client_id=1146522183439487096&permissions=8&scope=applications.commands%20bot" class="home-btn">¡Invitame!</a>
+            </div>
+            <div class="home-img">
+                <img src="https://media.discordapp.net/attachments/1037465884769386538/1201602268429033604/1706041770006.jpg?ex=65ca6a51&is=65b7f551&hm=08583f0bd2dedeca7d0d47ef3f8f293e1886f2e57125d6034d021d1eefb14872&"
+                    alt="">
+            </div>
+        </div>
+    </div>
+    <!-- home end -->
+    <!-- features -->
+    <div class="features">
+        <div class="curve">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill-opacity="1" id="features"
+                    d="M0,128L48,149.3C96,171,192,213,288,229.3C384,245,480,235,576,202.7C672,171,768,117,864,96C960,75,1056,85,1152,106.7C1248,128,1344,160,1392,176L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+                </path>
+            </svg>
+        </div>
+        <div class="wrapper reveal">
+            <div class="title">
+                <div class="th1">
+                    <h1>Características</h1>
+                </div>
+                <center>
+                    <div class="thr">
+                        <hr>
+                    </div>
+                </center>
+            </div>
+            <!-- feature start -->
+            <div class="features-grid">
+                <div class="feature feature1">
+                    <i class="fas fa-clipboard-list"></i>
+                    <h4>Moderación</h4>
+                    <p>Modera usuarios usando /moderar, donde aparecerá un simple panel con opciones de: baneo, kick, aislamiento entre otros; También tienes un sistema fácil y controlable de anti-links.</p>
+
+                </div>
+                <!-- feature end -->
+                <!-- feature start -->
+                <div class="feature feature2">
+                    <i class="fas fa-server"></i>
+                    <h4>Base de datos</h4>
+                    <p>Usamos MongoDB para obtener y trasladar pocos datos.</p>
+
+                </div>
+                <!-- feature end -->
+                <!-- feature start -->
+                <div class="feature feature3">
+                    <i class="fab fa-angellist"></i>
+                    <h4>Fácil y sencillo de configurar</h4>
+                   <!-- <p>Data</p> -->
+                </div>
+                <!-- feature end -->
+            </div>
+        </div>
+        <div class="curved">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill-opacity="1" id="commands"
+                    d="M0,224L48,229.3C96,235,192,245,288,218.7C384,192,480,128,576,133.3C672,139,768,213,864,229.3C960,245,1056,203,1152,186.7C1248,171,1344,181,1392,186.7L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+                </path>
+            </svg>
+        </div>
+    </div>
+    <!-- features end -->
+    <!-- commands -->
+    <div class="wrapper reveal">
+        <div class="title">
+            <div class="th1">
+                <h1>Algunos comandos</h1>
+            </div>
+            <center>
+                <div class="thr">
+                    <hr>
+                </div>
+            </center>
+        </div>
+        <!-- Command Category -->
+        <nav>
+            <div class=" categorys">
+                <span class="category active" data-name="all">Todos los comandos</span>
+                <span class="category" data-name="moderator">Moderación</span>
+				<span class="category" data-name="fun">Diversión</span>
+                <span class="category" data-name="utility">Utilidad</span>
+                <span class="category" data-name="info">Info</span>
+               <!-- <span class="category" data-name="premium">Premium</span> -->
+            </div>
+        </nav>
+        <!-- Commands -->
+        <div class="commands">
+            <!-- Command Start -->
+            <div class="command" data-name="utility">
+                <h2>/controlar sistemas</h2><span>
+                    <div class="cmdinfo">
+                        <p>Ve los sistemas actualmente activos en el servidor.</p>
+                    </div>
+                </span>
+            </div>
+            <!-- Command End -->
+            <!-- Command Start -->
+            <div class="command" data-name="moderator">
+                <h2>/moderar</h2><span>
+                    <div class="cmdinfo">
+                        <p>Modera a un usuario. Esto envía un panel donde podrás hacer distintas acciones.</p>
+                    </div>
+                </span>
+            </div>
+			<!-- Command End -->
+            <!-- Command Start ADVERT -->
+            <div class="command" data-name="moderator">
+				<h2>/advertir</h2><span>
+                    <div class="cmdinfo">
+                        <p>Advierte a un usuario.</p>
+                    </div>
+				</span>
+			</div>
+            <!-- Command End -->
+            <!-- Command Start GTP -->
+            <div class="command" data-name="utility">
+                <h2>/litio-gpt</h2><span>
+                    <div class="cmdinfo">
+                        <p>¡Utiliza y juega con la IA!</p>
+                    </div>
+                </span>
+            </div>
+            <!-- Command End -->
+            <!-- Command Start TICTAC -->
+            <div class="command" data-name="fun">
+                <h2>/juego tictactoe</h2><span>
+                    <div class="cmdinfo">
+                        <p>¡Juega al tictactoe con tus amigos!</p>
+                    </div>
+                </span>
+            </div>
+            <!-- Command End -->
+			<!-- Command Start TICTAC -->
+            <div class="command" data-name="fun">
+                <h2>/juego conectar4</h2><span>
+                    <div class="cmdinfo">
+                        <p>¡Juega al conectar 4 con tus amigos!</p>
+                    </div>
+                </span>
+            </div>
+            <!-- Command End -->
+			<!-- Command Start TICTAC -->
+            <div class="command" data-name="fun">
+                <h2>/juego ppot</h2><span>
+                    <div class="cmdinfo">
+                        <p>¡Juega al piedra, papel o tijeras con tus amigos!</p>
+                    </div>
+                </span>
+            </div>
+            <!-- Command End -->
+            <!-- Command Start HELP -->
+            <div class="command" data-name="info">
+                <h2>/info help</h2><span>
+                    <div class="cmdinfo">
+                        <p>Ve el listado de comandos completo del bot</p>
+                    </div>
+                </span>
+            </div>
+            <!-- Command End -->
+            <!-- Command Start BOT -->
+            <div class="command" data-name="info">
+                <h2>/info bot</h2><span>
+                    <div class="cmdinfo">
+                        <p>Ve la información del bot.</p>
+                    </div>
+                </span>
+            </div>
+            <!-- Command End -->
+            <!-- Command Start MOD -->
+            <div class="command" data-name="moderator">
+                <h2>/moderar</h2><span>
+                    <div class="cmdinfo">
+                        <p>Libera un panel con botones y modera a un miembro.</p>
+                    </div>
+                </span>
+            </div>
+            <!-- Command End -->
+			<!-- Command Start MOD -->
+            <div class="command" data-name="moderator">
+                <h2>/establecer antilink</h2><span>
+                    <div class="cmdinfo">
+                        <p>Establece el canal de antilinks.</p>
+                    </div>
+                </span>
+            </div>
+            <!-- Command End -->
+			<!-- Command Start MOD -->
+            <div class="command" data-name="moderator">
+                <h2>/establecer starboard</h2><span>
+                    <div class="cmdinfo">
+                        <p>Establece el canal de mensajes destacados.</p>
+                    </div>
+                </span>
+            </div>
+            <!-- Command End -->
+			<!-- Command Start MOD -->
+            <div class="command" data-name="moderator">
+                <h2>/establecer auditoria_mods</h2><span>
+                    <div class="cmdinfo">
+                        <p>Establece el canal de auditoria para moderadores.</p>
+                    </div>
+                </span>
+            </div>
+            <!-- Command End -->
+			<!-- Command Start MOD -->
+            <div class="command" data-name="moderator">
+                <h2>/establecer tickets</h2><span>
+                    <div class="cmdinfo">
+                        <p>Establece el canal de tickets.</p>
+                    </div>
+                </span>
+            </div>
+            <!-- Command End -->
+            <!-- Command Start TIKT -->
+            <div class="command" data-name="utility">
+                <h2>/descargar tiktok</h2><span>
+                    <div class="cmdinfo">
+                        <p>Descarga un video de tiktok de menos de 1 minuto.</p>
+                    </div>
+                </span>
+            </div>
+            <!-- Command End -->
+        </div>
+    </div>
+    <!-- commands end -->
+    <!-- faq -->
+    <div class="faq">
+        <div class="curve">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill-opacity="1" id="faq"
+                    d="M0,288L48,272C96,256,192,224,288,197.3C384,171,480,149,576,165.3C672,181,768,235,864,250.7C960,267,1056,245,1152,250.7C1248,256,1344,288,1392,304L1440,320L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+                </path>
+            </svg>
+        </div>
+       
+    <!-- faq end -->
+    <div id="support"></div>
+    <!-- support server -->
+    <div class="wrapper reveal">
+        <div class="title">
+            <div class="th1">
+                <h1>Servidor de Ayuda</h1>
+            </div>
+            <center>
+                <div class="thr">
+                    <hr>
+                </div>
+            </center>
+        </div>
+        <!-- replace with your server widget and make the width 100% -->
+        <iframe src="https://discord.com/widget?id=1145395813355364382&theme=dark" width="100%" height="600" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+    </div>
+    <!-- support server end -->
+    <div class="curve">
+        <svg xmlns=" http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill-opacity="1"
+                d="M0,192L48,176C96,160,192,128,288,133.3C384,139,480,181,576,202.7C672,224,768,224,864,224C960,224,1056,224,1152,234.7C1248,245,1344,267,1392,277.3L1440,288L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+            </path>
+        </svg>
+    </div>
+
+    <!-- footer -->
+    <footer>
+
+        <div class="wrapper">
+            <div class="foot">
+                <h1>© Litio boat</h1>
+                <nav>
+                    <ul class="nav-area bottom-nav">
+                        <li><a href="#top">Home</a></li>
+                        <li><a href="#features">Características</a></li>
+                        <li><a href="#commands">Comandos</a></li>
+                        <!-- <li><a href="#faq">FAQ</a></li> -->
+                        <li><a href="#support">Servidor de Ayuda</a></li>
+                    </ul>
+                </nav>
+                <h4>© Copyright 2024 Gastoonit</h4>
+            </div>
+        </div>
+    </footer>
+    <!-- footer end -->
+    <script src="main.js"></script>
+    <script src="commands.js"></script>
+    <script src="https://code.iconify.design/1/1.0.4/iconify.min.js">   </script>
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+</body>
+
+</html>
